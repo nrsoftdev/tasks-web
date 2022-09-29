@@ -7,7 +7,7 @@
   </module>
   <module>
     <web>
-      <web-uri>tasks-svc</web-uri>
+      <web-uri>tasks-svc.war</web-uri>
       <context-root>/tasks-svc</context-root>
     </web>
   </module>

@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+                
+    
+    
     <wb-module deploy-name="tasks-web-0.0.1-SNAPSHOT">
+                                
+        
+        
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+                                
+        
+        
         <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
         <dependent-module archiveName="tasks-ejb.jar" deploy-path="/" handle="module:/resource/tasks-ejb/tasks-ejb">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="tasks-svc" deploy-path="/" handle="module:/resource/tasks-svc/tasks-svc">
+        <dependent-module archiveName="tasks-svc.war" deploy-path="/" handle="module:/resource/tasks-svc/tasks-svc">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="tasks-ejb-api-0.0.1-SNAPSHOT.jar" deploy-path="/lib" handle="module:/resource/tasks-ejb-api/tasks-ejb-api">
@@ -35,7 +44,7 @@
         <dependent-module archiveName="spring-jcl-5.3.8.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/springframework/spring-jcl/5.3.8/spring-jcl-5.3.8.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="nrlib-1.0.0.jar" deploy-path="/lib" handle="module:/resource/nrlib/nrlib">
+        <dependent-module archiveName="nrlib-1.0.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/it/nrsoft/nrlib/1.0.0/nrlib-1.0.0.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="org.eclipse.swt.win32.win32.x86_64-4.3.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/eclipse/swt/org.eclipse.swt.win32.win32.x86_64/4.3/org.eclipse.swt.win32.win32.x86_64-4.3.jar">
@@ -83,19 +92,28 @@
         <dependent-module archiveName="xmlbeans-2.6.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="stax-api-1.0.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/stax/stax-api/1.0.1/stax-api-1.0.1.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <dependent-module archiveName="curvesapi-1.04.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="h2-1.4.193.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/h2database/h2/1.4.193/h2-1.4.193.jar">
+        <dependent-module archiveName="h2-2.1.212.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/h2database/h2/2.1.212/h2-2.1.212.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="javax.persistence-api-2.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar">
+        <dependent-module archiveName="jakarta.persistence-api-3.1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="javax.transaction-api-1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar">
+        <dependent-module archiveName="jakarta.transaction-api-2.0.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jakarta.xml.bind-api-3.0.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/jakarta/xml/bind/jakarta.xml.bind-api/3.0.0/jakarta.xml.bind-api-3.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jakarta.activation-2.0.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/sun/activation/jakarta.activation/2.0.0/jakarta.activation-2.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-impl-3.0.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/sun/xml/bind/jaxb-impl/3.0.0/jaxb-impl-3.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-core-3.0.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/sun/xml/bind/jaxb-core/3.0.0/jaxb-core-3.0.0.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="antlr4-runtime-4.9.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/antlr/antlr4-runtime/4.9.2/antlr4-runtime-4.9.2.jar">
@@ -137,8 +155,17 @@
         <dependent-module archiveName="jackson-core-2.13.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="jakarta.jakartaee-api-9.0.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/jakarta/platform/jakarta.jakartaee-api/9.0.0/jakarta.jakartaee-api-9.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="modelmapper-2.4.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/modelmapper/modelmapper/2.4.4/modelmapper-2.4.4.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+                            
+    
+    
     </wb-module>
+            
+
+
 </project-modules>

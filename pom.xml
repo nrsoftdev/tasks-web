@@ -29,7 +29,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
     <plugins>
       <plugin>
         <artifactId>maven-ear-plugin</artifactId>
-        <version>3.0.2</version>
+        <version>3.2.0</version>
         <configuration>
           <version>8</version>
           <generatedDescriptorLocation>${basedir}/src/main/application/META-INF</generatedDescriptorLocation>
@@ -44,11 +44,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
   				<groupId>nrsoft.tasks</groupId>
   				<artifactId>tasks-ejb</artifactId>
                 <uri>tasks-ejb.jar</uri>
-                <bundleFileName>tasks-ejb.jar</bundleFileName>
+                <bundleFileName>tasks-ejb</bundleFileName>
             </ejbModule>
             <webModule>
             	<groupId>nrsoft.tasks</groupId>
   				<artifactId>tasks-svc</artifactId>
+  				<uri>tasks-svc.war</uri>
   				<bundleFileName>tasks-svc</bundleFileName>
             
             </webModule>
